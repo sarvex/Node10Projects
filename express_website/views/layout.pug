@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Express Website
+    title #{title}
 
     link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
     link(href='stylesheets/style.css', rel='stylesheet')
@@ -21,11 +21,11 @@ html(lang='en')
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.active
-              a(href='#') Home
+              a(href='/') Home
             li
-              a(href='#about') About
+              a(href='/about') About
             li
-              a(href='#contact') Contact
+              a(href='/contact') Contact
         // /.nav-collapse
     .container
     // /.container
