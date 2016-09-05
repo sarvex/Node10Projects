@@ -13,7 +13,7 @@ const mimeTypes = {
     "png": "image/png",
     "js": "text/javascript",
     "css": "text/css",
-}
+};
 
 // Create Server
 const server = http.createServer((req, res) => {
@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
     }
 
     if (stats.isFile()) {
-        const mimeType = mimeTypes[path.extname(fileName).split('.').reverse()[0]]
+        const mimeType = mimeTypes[path.extname(fileName).split('.').reverse()[0]];
         res.writeHead(200, {
             'Content-Type': mimeType
         })
@@ -49,7 +49,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {
             'Content-Type': 'text/plain'
         });
-        res.end('500 Internal Error\n')
+        res.end('500 Internal Error\n');
     }
 });
 
